@@ -1,22 +1,48 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6621445&assignment_repo_type=AssignmentRepo)
 # Component 2 - Task
 
-<p>The current git repository is an empty Laravel project. It contains the base package.json file that will allow all required files to be downloaded locally with the command <b>composer update</b>. For this component you should add authentication packages as your first step. See the Laravel site for how to add Laravel Breeze<p>
+<p>This is an extension of Component 1 and using Laravel as a Framework for working with your views and data.
+</p>
+<p>Data is again being stored as a json file and some of the previous PHP files are being used to read and update this 
+data on the server side. The <b>JsonUtility</b> class has some additional methods in for amending this data on the server.
+In the previous task you wrote HTML directly through the HTML writer class. In this exercise you are to work with Views 
+in Laravel, and use appropriate Routes to call methods in a <b>ProductController</b> class</p>
 
-<p>This task is based around the first case study and a Product catalogue (CDs/DVD/Games). You are expected to build a larger web application to showcase your understanding of Laravel and working with Models, Views and Controllers. You will be able to distinguish different user roles - i.e. only an admin will be able to add/edit/delete products. It is expected that you will use Factories to populate the database with a large dataset (>100 products) and that filtering will be applied to help a customer locate products.
-</p> 
- 
-As a guide - requirements are:
+<p>
+You are required to:
 </p>
 <ul>
-<li>Correct Routing and use of HTTP verbs for CRUD operations</li>
-<li>Good use of views and reusable view templates</li>
-<li>use of Model Classes and Eloquent ORM for working with data/database</li>
-<li>Factories for seeding and simulating large amounts of data in the database</li>
-<li>authentication</li>
+<li>embed these files into a Laravel Project - the structure already used will map into Laravel.</li>
+<li>create a front end (views) that will allow a user to perform CRUD operations</li>
+<li>products should be displayed with a reusable template (i.e. card)</li>
 <li>follow good practice and naming conventions for defining your routes, and methods in the controller</li>
-<li>Gates and Policies to distinguish available user actions</li>
-<li>intuitive front end design</li>
 </ul>
 
-<p>You are expected to demonstrate your end product in a video format and support your understanding and knowledge of developing web applications in a 
-follow up Question and Answer session</p>
+<p>A javascript file has been provided which includes axios calls for performing asynchronous web requests. 
+If using this then make note of the id and class selector names being used. Axios is a package which is included with 
+Laravel.</p>
+
+
+## Sample Screens
+
+An expected layout and structure could take the following form
+
+
+## CREATE + READ
+
+<img src="./readme_images/read.jpg" width="800">
+
+[IMAGE](readme_images/read.jpg)
+
+Full Product Listing will include a blank template card at the end with POST (add button)
+
+### UPDATE + DELETE
+
+<img src="./readme_images/update.jpg" width="400">
+
+[IMAGE](readme_images/read.jpg)
+
+A 'Selected' product will show a modified template with PATCH (update button) and DELETE (delete button) options
+
+
+
